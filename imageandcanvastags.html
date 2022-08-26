@@ -16,5 +16,14 @@
      <circle cx="30" cy="30" r="20" stroke="pink" stroke-width="0.5" fill="white">
     </svg>
     <br>
+    <canvas id="canvas">
+        canvas not supported
+    </canvas>
+    <script>
+        var canvas=document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillstyle = "#000000";
+        ctx.fillRect(20,40,90,20);
+    </script>
 </body>
 </html>
