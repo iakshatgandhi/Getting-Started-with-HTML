@@ -19,14 +19,15 @@
         <input type="file" id="user_documents" placeholder="upload your Documents"><br>
         <!-- for multi line input we use  -->
         <textarea id="Address" placeholder="enter your Address"></textarea><br>
-        <input type="submit" value="submit here">
-        <button type="button">reset</button><br>
         <select>
             <option>Select city/state</option>
-            <optgroup label="uttar pradesh">
-                <option>Najibabad</option>
-                <option>Noida</option>
-                <option>Gaziababad</option>
+            <optgroup label="Uttar pradesh">
+                <option value="Najibabad">Najibabad</option>   <!-- value attribute is used as whatever 
+                    the value u pass here for the option u supplied would be going to 
+                    pass to the database also in this case u can use the actual 
+                    option name as well as any number as well  -->
+                <option value="2">Noida</option>
+                <option value="3">Gaziababad</option>
                 <option>Meerut</option>
             </optgroup>
             <optgroup label="Uttrakhand">
@@ -35,7 +36,9 @@
                 <option>Haridware</option>
                 <option>Lansdown</option>
             </optgroup>
-        </select>
+        </select><br>
+        <input type="submit" value="submit here">
+        <button type="button">reset</button><br>
     </form>
 </body>
 </html>
