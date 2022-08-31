@@ -11,9 +11,19 @@
             text-align: center;
             color:red;
         }
-        span{
-            color: dodgerblue;
-            
+        span{                                 /*Element Selector*/
+            color: black;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #division{                              /*Id selector*/
+            color: aliceblue;
+            padding: 10px;
+        }
+        .intro{                                 /*class selector*/
+            background-color: teal;
+            color: turquoise;
+            font-style: italic;
         }
     </style>
 </head>
@@ -22,5 +32,9 @@
     <h5>the style added to this selector would be implimented on every 
         line of the html body</h5>
         <span>its denotion is the *and then the braces next to that</span>
+        
+        <div id="division" class="intro">
+            <p>This is some text in a div element.</p>
+        </div>
 </body>
 </html>
