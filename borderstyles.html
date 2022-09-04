@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border styles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .border{
+            border-color: teal;
+            border-style: solid;
+            padding: 5%;
+        }
+        #bstyle1{
+            border-style: dotted;
+            border-width: 3px;
+            padding: 6%;
+        }
+        #bstyle2{
+            border-color: pink;
+            border-style: groove;
+            padding: 2%;
+            font-family: 'Qwitcher Grypen', cursive; border-radius: 10px;
+            font-size: 280%;
+        }
+        #bstyle3{
+            border-top-style: dotted;
+            border-left-style: groove;
+            border-right-style: dashed;
+            border-bottom-style: solid; border-color: blue; border-radius: 10px; padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="border">this the the border colour</p>
+        <h4 id="bstyle1">this is the border style 1</h4>
+        <h4 id="bstyle2">this is the border style 2</h4>
+        <h4 id="bstyle3">this is the border style 3</h4>
+    </div>
+</body>
+</html>
