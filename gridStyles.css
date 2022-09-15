@@ -1,0 +1,40 @@
+.container{
+    background-color: blue;
+    /* height: 610px; */
+    width: 1140px;
+    display: grid;
+    padding: 8px;
+   /* grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 135px 135px 135px ; */
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 38px 1fr 5cm 38px;
+    
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);           */
+    /* all three are the different methods to define the grid rows and columns */
+    row-gap: 8px;
+    column-gap: 8px;
+    
+}
+.items{
+    background-color: aqua;
+}
+.header{
+    grid-column: 1/ span 4;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.test1{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+.test2{
+    grid-column-start: 3;
+    grid-column-end: 5; 
+}
+.footer{
+    grid-column: 1/ span 4;
+    background-color: black;
+}
