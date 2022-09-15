@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Grid</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 130px 400px 130px;
+            grid-gap: 15px;
+        }
+        header,footer,main{
+            grid-column: 1/ span 2;
+        }
+        body{
+            margin: 0 auto;
+            max-width: 575px;
+            padding: 15px 0;
+        }
+        header,footer,main{
+            background-color: purple;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>This is the header</header>
+    <main>
+        this is the main
+    </main>
+    <footer>Here comes the footer</footer>
+</body>
+</html>
