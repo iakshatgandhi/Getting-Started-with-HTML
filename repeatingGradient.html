@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Gradient in CSS test cases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .oswald{
+            font-family: 'Oswald', sans-serif;
+        }
+        #grad1{
+            height: 240px;
+            background-color: rgb(252, 124, 4);
+            background-image: repeating-linear-gradient(rgb(252, 124, 4), rgb(255, 255, 255) 10%, rgb(34, 255, 0) 20%);
+        }
+        #grad2 {
+            height: 200px;
+            background-color: red;
+            background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+        }
+        #grad3{
+            height: 200px;
+            background-color: blue;
+            background-image: repeating-linear-gradient(350deg,blue,yellow 7%,green 10%);
+        }
+        #grad4{
+            height: 200px;
+            background-color: yellow;
+            background-image: repeating-linear-gradient(90deg,yellow,rgb(192, 40, 40) 8%,rgb(0, 0, 0) 15%);
+        }
+        #grad5 {
+            height: 200px;
+            background-color: black; /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(45deg, black 0px, black 10px, black 10px, yellow 10px, yellow 20px);
+          }
+    </style>
+</head>
+<body>
+    <h1 class="oswald">Repeating Linear Gradient</h1>
+
+    <div id="grad1"></div>
+
+    <p>A repeating gradient on 45deg axe starting orange and finishing green:</p>
+    <div id="grad2"></div>
+
+    <p>A repeating gradient on 350deg axe starting red and finishing green:</p>
+    <div id="grad3"></div>
+
+    <p>A repeating gradient on 90deg axe starting red and finishing black:</p>
+    <div id="grad4"></div>
+
+    <p>A repeating linear gradient with solid stripes:</p>
+    <div id="grad5"></div>
+</body>
+</html>
+
+        <!-- path: C:\Users\busin\OneDrive\Documents\Getting Started with HTML, CSS\repeatingGradient.html -->
