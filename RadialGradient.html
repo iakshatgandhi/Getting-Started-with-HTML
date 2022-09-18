@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Radial Gradient  </title>
+    <!-- background-image: radial-gradient(shape size at position, start-color, ..., last-color); -->
+    <style>
+        #radial01{
+            text-align: center;
+            height: 60px;
+            background-image: radial-gradient(blue,rgb(183, 56, 219),rgb(132, 0, 255));
+        }
+        #radial02 {
+            height: 150px;
+            background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+          }
+          #grad1 {
+            height: 150px;
+            width: 150px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: radial-gradient(closest-side at 50% 60%, red, yellow, black);
+          }
+          
+          #grad2 {
+            height: 150px;
+            width: 150px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+          }
+          
+          #grad3 {
+            height: 150px;
+            width: 150px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+          }
+          
+          #grad4 {
+            height: 150px;
+            width: 150px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+          }
+    </style>
+    <!-- farthest corner is the default in the radial gradient  -->
+</head>
+<body>
+    <div id="radial01">
+        <h1>Radial Gradient</h1>
+    </div>
+    <h1>Use of Different Size Keywords</h1>
+    <p id="radial02">
+    The size parameter defines the size of the gradient. It can take four values:
+
+    1 closest-side<br>
+    2 farthest-side<br>
+    3 closest-corner<br>
+    4 farthest-corner
+    </p>
+    <h2>closest-side:</h2>
+<div id="grad1"></div>
+
+<h2>farthest-side:</h2>
+<div id="grad2"></div>
+
+<h2>closest-corner:</h2>
+<div id="grad3"></div>
+
+<h2>farthest-corner (default):</h2>
+<div id="grad4"></div>
+
+</body>
+</html>
+
+
