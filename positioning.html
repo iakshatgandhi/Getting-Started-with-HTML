@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS positioning </title>
+    <!-- There are five different position values:
+            There are five different position values:
+                static (default)
+                relative
+                fixed
+                absolute
+                sticky -->
+    <style> 
+        #container{
+            height: 750px;
+            width: 1300px;
+            background-color: rgb(240, 223, 205);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            display: flex;  /*inline block creates the element sleamlessly into */
+            height: 85px;   /* the horizontal line if u use the basic block it will */    
+            width: 85px;    /*end up displaying in the vertical format by default*/
+            border:2px solid red;
+            margin: 2px;
+            align-items: center;
+            justify-content: center;
+        }
+        #box5{
+            /* in relative position we are able to use the top bottom left and right property
+            as in case one used top 12px so the box moved 12px topways relative 
+            to its normal position also it leaves its nomrmalposition in the relative; Similarly */
+            position: relative;
+            background-color: rgba(249, 218, 249, 0.3);
+            top: 15px;
+            left: 45px;
+        }
+        #box4{
+            /*in the absolute position it follows the position defined by the absolute parent 
+            as in this case box 4 overlapes over the box 3 the reason to that is that is since 
+            container is the parent class of all the boxes and in parent we had defined the property
+            that is align-item and justify content both center so the box4 obeys that and overlaps 
+            over the box 3*/
+            position: absolute;
+            background-color: rgba(179, 239, 239, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+</body>
+</html>
