@@ -8,6 +8,19 @@
     background-size: cover;
     height: 870px;
 }
+.nametemplate{
+    color: black;
+    position: fixed;
+    right: 38px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: transparent;
+
+}
 .bg-opacity{
     background: linear-gradient(110deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     height: 870px;
