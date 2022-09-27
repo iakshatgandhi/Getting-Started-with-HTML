@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background: rgba(35, 39, 50, 0.6);
+    height: 60px;
+    width: 100%;
+}
+label.design01{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 15px,100%;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px  13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.select1,a:hover{
+    background: #3b4248;
+    transition: .5s;
+}
+/* .toggle {
+        position : relative ;
+        display : inline-block;
+        width : 45px;
+        height : 24px;
+        background-color: red;
+        border-radius: 30px;
+        border: 2px solid gray;
+    }
+           
+    .toggle:after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 1px;
+        left: 1px;
+        transition:  all 0.5s;
+    }
+           
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+           
+    .checkbox:checked + .toggle::after {
+        left : 22px;
+    }       
+    .checkbox:checked + .toggle {
+        background-color: green;
+    }
+    .checkbox {
+        display : none;
+    } */
+.checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none; 
+}
+@media (max-width: 952px){
+    label.design01{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    @media (max-width: 858px){
+        .checkbox{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            top: 80px;
+            left: -100;
+            text-align: center;
+            transition: all .5s;
+        }
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a:hover:checked ~ul{
+        left:0;
+    }
+}
