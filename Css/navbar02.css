@@ -33,9 +33,6 @@
 .button.expand{
   width: 100%;
 }
-.fas.expand:before{
-  content: '\f00d';
-}
 ul{
   list-style: none;
   position: absolute;
